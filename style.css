@@ -3,12 +3,12 @@
 }
 body{
     margin: 0;
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
 }
 
 header{
     background-color: rgb(126, 18, 33);
-    padding: 10%;
+    padding: 5%;
 }
 header p{
     /* margin: 0; */
@@ -21,11 +21,15 @@ header span{
     font-size: 26px;
 }
 header h1 {
-    color: rgba(236, 26, 96, 0.726);
+    color: rgba(209, 31, 31, 0.726);
     font-size: 4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* margin: 0 auto 2% 0; */
     margin: 0;
+}
+fieldset{
+    border: 5px solid rgba(209, 43, 43, 0.514);
+    padding: 5%;
 }
 h2{
     font-size: 2.5rem;
@@ -38,6 +42,7 @@ h2{
     border-image: linear-gradient(145deg, orangered, transparent, transparent, transparent, orangered);
     border-image-slice: 1;
 }
+
 @media screen and (max-width: 600px) {
     header h1{
         font-size: 3rem;
@@ -49,88 +54,20 @@ h2{
         font-size: 1.5rem;
     }
     h2{
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 }
-
-.grad-buttons{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    max-width: 800px;
-    margin: 50px auto;
-}
-.gradient-buttons{
-    display: inline;
-    width: fit-content;
-    margin: 5% auto;
-    position: relative;
-    /* font-size: 1.2rem; */
-}
-.gradient-buttons a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bolder;
-    border: 2px solid;
-    padding: 10px 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#grad-btn-1 a{
-    color: rgb(238, 238, 238);
-    border-radius: 100px;
-    transition: 300ms ease-in-out;
-    
-}
-#grad-btn-1 a:hover{
-    color: black;
-    background: linear-gradient(90deg, rgb(27, 152, 190), rgb(11, 190, 41), rgb(218, 196, 7),  rgb(236, 130, 8), rgb(218, 73, 73), rgb(206, 53, 236), rgb(27, 152, 190));
-    width: 150px;
-    padding: 15px 60px;
-    border: 0;
-    cursor:pointer;
-    box-shadow: 0 0 10px rgb(27, 152, 190), 0 0 30px rgb(27, 152, 190);
-    background-size: 400%;
-    animation: animate 7s linear infinite;
-}
-@keyframes animate{
-    0%{
-        background-position: 0%;
-    }
-    100%{
-        background-position: 400%
-    }
-}
-
-#grad-btn-2 a{
-    border-image-source: linear-gradient(90deg, red, orangered, yellow,  green);
-    border-image-slice: 1;
-    border-width: 3px;
-    color: white;
-    /* transition: 300ms ease-in-out; */
-}
-#grad-btn-2 a:hover{
-    background: linear-gradient(90deg, red, orangered, yellow,  green, blue, purple, red);
-    background-size: 400%;
-    border: 0;
-    padding: 13px 43px;
-    animation: animate 7s linear infinite;
-}
-
-/* #grad-btn-3 a{
-    color: black;
-    background: linear-gradient(45deg, crimson,crimson, white, crimson, crimson);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    animation: animate 10s linear infinite;
-} */
-
 
 .btn{
     max-width: 800px;
     margin: auto;
 }
-button{
+.slides{
+    padding-top: 3%;
+    padding-bottom: 10%;
+    background: #000;
+}
+.slides button{
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -143,6 +80,10 @@ button{
     cursor: pointer;
     background-repeat: no-repeat;
     transition: 300ms ease-in-out;
+}
+.slides button:active{
+    position: relative;
+    top: 3px;
 }
 
 #button-1{
@@ -194,7 +135,7 @@ button{
     opacity: 0;
     transition: 300ms ease-in-out;
 }
-button span{
+.btn span{
     position: relative;
     background: transparent;
     transition: 300ms;
@@ -277,4 +218,86 @@ button span{
     left: 0;
     opacity: 1;
     border-radius: 0;
+}
+
+/* SHADOW BUTTONS  */
+.shadow-buttons{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgb(236, 232, 232);
+}
+.sh-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 7%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+.shadow-buttons button{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+    height: 40px;
+    width: 160px;
+    margin: 5% auto;
+    border: 0;
+    border-radius: 2rem;
+    background: rgb(235, 232, 232);
+    position: relative;
+    cursor: pointer;
+}
+
+#sh-btn-1{
+    box-shadow: 3px 4px 10px black;
+}
+#sh-btn-1:active{
+    top: 4px;
+    box-shadow: 1px 1px 3px black;
+    /* border: 2px solid; */
+}
+
+#sh-btn-2{
+    box-shadow: 0 10px 16px black;
+}
+#sh-btn-2:active{
+    top: 5px;
+    box-shadow: 0 2px 3px black;
+}
+
+#sh-btn-3{
+    box-shadow: -7px 10px 16px black;
+}
+#sh-btn-3:active{
+    top: 5px;
+    box-shadow: -2px 3px 3px black;
+}
+
+#sh-btn-4{
+    box-shadow: 0px 0px 15px 5px black;
+}
+#sh-btn-4:active{
+    height: 38px;
+    width: 155px;
+    box-shadow: 0px 0px 7px 2px black;
+}
+
+#sh-btn-5{
+    box-shadow: 3px 5px 10px black;
+}
+#sh-btn-5:active{
+    top: 5px;
+    left: 3px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#sh-btn-6{
+    box-shadow: -3px 5px 10px black;
+}
+#sh-btn-6:active{
+    top: 5px;
+    right: 3px;
+    box-shadow: -1px 2px 3px black;
 }
