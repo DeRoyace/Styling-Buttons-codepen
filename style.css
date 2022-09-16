@@ -224,7 +224,8 @@ h2{
 .shadow-buttons{
     padding-top: 5%;
     padding-bottom: 5%;
-    background: rgb(236, 232, 232);
+    /* background: rgb(236, 232, 232); */
+    background: #e3dfec;
 }
 .sh-grid{
     display: grid;
@@ -245,18 +246,21 @@ h2{
     margin: 5% auto;
     border: 0;
     border-radius: 2rem;
-    background: rgb(235, 232, 232);
+    /* background: rgb(235, 232, 232); */
     position: relative;
     cursor: pointer;
 }
 
 #sh-btn-1{
     box-shadow: 3px 4px 10px black;
+    /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.245), transparent); */
 }
 #sh-btn-1:active{
-    top: 4px;
+    top: 1px;
+    height: 36px;
+    width: 159px;
+    background-position: 0px 0px;
     box-shadow: 1px 1px 3px black;
-    /* border: 2px solid; */
 }
 
 #sh-btn-2{
@@ -300,4 +304,91 @@ h2{
     top: 5px;
     right: 3px;
     box-shadow: -1px 2px 3px black;
+}
+
+.metallic-buttons{
+    background-image: url('images/light-gray-brushed-metallic-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+}
+.metallic-buttons h2{
+    color: #000;
+    border-image: linear-gradient(145deg, rgb(54, 52, 51), transparent, transparent, transparent, rgb(54, 52, 51));
+    border-image-slice: 1;
+}
+.metallic-buttons button{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+    height: 40px;
+    width: 160px;
+    margin: 5% auto;
+    border: 0;
+    border-radius: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+.metallic-buttons button:active{
+    top: 3px;
+}
+.metal-btns{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 7%;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+#metal-btn-1{
+    background: linear-gradient(45deg, rgb(39, 39, 39), transparent);
+    background-position: 15px 10px;
+    box-shadow: 5px 5px 10px, -5px -5px 10px white;
+}
+#metal-btn-1:active{
+    box-shadow: 3px 3px 4px , -3px -3px 5px white;
+}
+#metal-btn-2{
+    background: linear-gradient(45deg, rgb(95, 95, 95), transparent);
+    background-position: -52px 10px;
+    box-shadow: 5px 5px 10px, -5px -5px 6px rgb(221, 221, 221);
+}
+#metal-btn-2:active{
+    top: -3px;
+    box-shadow: 3px 3px 4px , -3px -3px 5px rgb(221, 221, 221);
+}
+#metal-btn-3{
+    background: linear-gradient(45deg, rgb(83, 83, 83), rgb(161, 161, 161)) no-repeat;
+    /* background-position: -52px 10px; */
+    box-shadow: 5px 5px 10px, -5px -5px 6px rgb(235, 235, 235);
+}
+#metal-btn-3:active{
+    box-shadow: 3px 3px 4px , -3px -3px 5px rgb(235, 235, 235);
+}
+#metal-btn-4{
+    background-size: 30%;
+    background: linear-gradient(45deg, rgb(12, 12, 12), rgb(161, 161, 161), black) no-repeat;
+    box-shadow: 5px 5px 10px, -5px -5px 6px rgb(235, 235, 235);
+}
+#metal-btn-4:active{
+    top: -1px;
+    box-shadow: 3px 3px 4px , -3px -3px 5px rgb(235, 235, 235);
+}
+#metal-btn-5{
+    background-size: 30%;
+    background: linear-gradient(0deg, rgb(37, 37, 37), rgb(191, 192, 197), rgb(37, 37, 37)) no-repeat;
+    box-shadow: 5px 5px 10px rgb(235, 235, 235), -5px -5px 6px rgb(235, 235, 235);
+}
+#metal-btn-5:active{
+    box-shadow: 3px 3px 4px rgb(235, 235, 235) , -3px -3px 5px rgb(235, 235, 235);
+}
+#metal-btn-6{
+    background-size: 30%;
+    background: linear-gradient(90deg, rgb(37, 37, 37), rgb(191, 192, 197), rgb(37, 37, 37)) no-repeat;
+    box-shadow: 5px 5px 10px rgb(235, 235, 235), -5px -5px 6px rgb(235, 235, 235);
+}
+#metal-btn-6:active{
+    box-shadow: 3px 3px 4px rgb(235, 235, 235) , -3px -3px 5px rgb(235, 235, 235);
 }
