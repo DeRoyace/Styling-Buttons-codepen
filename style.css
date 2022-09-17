@@ -65,14 +65,14 @@ h2{
 .slides{
     padding-top: 3%;
     padding-bottom: 10%;
-    background: #000;
+    background: rgb(17, 17, 17);
 }
 .slides button{
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
     color: whitesmoke;
-    background: #000;
+    background: rgb(17, 17, 17);
     border: 2px solid;
     width: 180px;
     height: 50px;
@@ -225,7 +225,7 @@ h2{
     padding-top: 5%;
     padding-bottom: 5%;
     /* background: rgb(236, 232, 232); */
-    background: #e3dfec;
+    background: #e1d7f0;
 }
 .sh-grid{
     display: grid;
@@ -246,64 +246,62 @@ h2{
     margin: 5% auto;
     border: 0;
     border-radius: 2rem;
-    /* background: rgb(235, 232, 232); */
+    background: rgb(225, 209, 240);
     position: relative;
     cursor: pointer;
 }
 
 #sh-btn-1{
     box-shadow: 3px 4px 10px black;
-    /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.245), transparent); */
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.245), transparent);
 }
 #sh-btn-1:active{
-    top: 1px;
-    height: 36px;
-    width: 159px;
-    background-position: 0px 0px;
-    box-shadow: 1px 1px 3px black;
+    top: 2px;
+    box-shadow: 2px 2px 3px ;
 }
 
 #sh-btn-2{
-    box-shadow: 0 10px 16px black;
+    box-shadow: 0 10px 16px ;
 }
 #sh-btn-2:active{
     top: 5px;
-    box-shadow: 0 2px 3px black;
+    box-shadow: 0 2px 3px ;
 }
 
 #sh-btn-3{
-    box-shadow: -7px 10px 16px black;
+    box-shadow: -7px 10px 16px;
 }
 #sh-btn-3:active{
     top: 5px;
-    box-shadow: -2px 3px 3px black;
+    right: 3px;
+    box-shadow: -2px 3px 3px;
 }
 
 #sh-btn-4{
-    box-shadow: 0px 0px 15px 5px black;
+    box-shadow: 0px 0px 15px 5px ;
 }
 #sh-btn-4:active{
     height: 38px;
     width: 155px;
-    box-shadow: 0px 0px 7px 2px black;
+    box-shadow: 0px 0px 7px 2px ;
 }
 
 #sh-btn-5{
-    box-shadow: 3px 5px 10px black;
+    box-shadow: 3px 5px 10px ;
 }
 #sh-btn-5:active{
     top: 5px;
     left: 3px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px ;
 }
 
 #sh-btn-6{
-    box-shadow: -3px 5px 10px black;
+    box-shadow: -3px 5px 10px ;
 }
 #sh-btn-6:active{
     top: 5px;
     right: 3px;
-    box-shadow: -1px 2px 3px black;
+    box-shadow: -1px 2px 3px ;
 }
 
 .metallic-buttons{
@@ -379,16 +377,19 @@ h2{
 #metal-btn-5{
     background-size: 30%;
     background: linear-gradient(0deg, rgb(37, 37, 37), rgb(191, 192, 197), rgb(37, 37, 37)) no-repeat;
-    box-shadow: 5px 5px 10px rgb(235, 235, 235), -5px -5px 6px rgb(235, 235, 235);
+    box-shadow: 5px 0px 16px rgb(255, 255, 255), -5px 0px 16px rgb(12, 12, 12);
 }
 #metal-btn-5:active{
-    box-shadow: 3px 3px 4px rgb(235, 235, 235) , -3px -3px 5px rgb(235, 235, 235);
+    top: 0;
+    height: 38px;
+    width: 157px;
+    box-shadow: -3px 0px 10px rgb(12, 12, 12), 3px 0px 10px rgb(255, 255, 255);
 }
 #metal-btn-6{
     background-size: 30%;
     background: linear-gradient(90deg, rgb(37, 37, 37), rgb(191, 192, 197), rgb(37, 37, 37)) no-repeat;
-    box-shadow: 5px 5px 10px rgb(235, 235, 235), -5px -5px 6px rgb(235, 235, 235);
+    box-shadow: 0 0 16px 7px rgb(235, 235, 235);
 }
 #metal-btn-6:active{
-    box-shadow: 3px 3px 4px rgb(235, 235, 235) , -3px -3px 5px rgb(235, 235, 235);
+    box-shadow: 0 0 7px 3px rgb(235, 235, 235);
 }
