@@ -65,14 +65,14 @@ h2{
 .slides{
     padding-top: 3%;
     padding-bottom: 10%;
-    background: rgb(17, 17, 17);
+    background: rgb(12, 12, 12);
 }
 .slides button{
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
     color: whitesmoke;
-    background: rgb(17, 17, 17);
+    background: rgb(12, 12, 12);
     border: 2px solid;
     width: 180px;
     height: 50px;
